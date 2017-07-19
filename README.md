@@ -209,6 +209,7 @@ Now we need to copy that dump file over to our slave
 
 ```
 scp dbdump.sql 192.168.70.11:/tmp
+NOTE: You are doing the scp as the vagrant user with password - vagrant.
 
 # Example:
 [vagrant@devbox7-a ~]$ scp dbdump.sql 192.168.70.11:/tmp
@@ -217,7 +218,7 @@ ECDSA key fingerprint is 3a:88:05:f6:ba:6c:77:0f:cb:0a:d7:47:b5:e5:ad:d5.
 Are you sure you want to continue connecting (yes/no)? yes
 Warning: Permanently added '192.168.70.11' (ECDSA) to the list of known hosts.
 vagrant@192.168.70.11's password:
-dbdump.sql                                                                                                                                         100%  759KB 758.6KB/s   00:00
+dbdump.sql                                        100%  759KB 758.6KB/s   00:00
 [vagrant@devbox7-a ~]$
 ```
 

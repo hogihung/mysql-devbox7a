@@ -12,7 +12,7 @@ Vagrant.configure("2") do |config|
   config.vm.network :forwarded_port, guest: 3306, host: 9310, id: "mysqldb"
 
   # Adjust this to meet your configuration needs
-  config.vm.synced_folder "/Users/jfhogarty/Documents/Programming/Elixir/", "/vagrant"
+  config.vm.synced_folder "/Users/jfhogarty/Documents/Programming/Elixir/DEVBOX7A-B", "/vagrant"
 
   config.vm.provider :virtualbox do |vb|
     host = RbConfig::CONFIG['host_os']
